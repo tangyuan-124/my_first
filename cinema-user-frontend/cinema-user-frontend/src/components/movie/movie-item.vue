@@ -25,8 +25,6 @@
       </div>
     </div>
 
-    <!-- 评分（添加到右上角） -->
-
 
     <!-- 标题 -->
     <div class="title-style">
@@ -73,7 +71,7 @@ export default {
       this.movieItem.movieCategoryList = this.movieItem.movieCategoryList.map((obj, index) => {
         return obj.movieCategoryName;
       }).join("/");
-      this.movieItem.movieScores = this.movieItem.scores || "暂无评分"; // 默认值
+
       this.movieInfoUrl = '/movieInfo/' + this.movieItem.movieId;
     }
   }
@@ -120,19 +118,7 @@ export default {
         3px 3px 6px #804000; /* 阴影3 */
     letter-spacing: 1px; /* 字间距 */
   }
-
-
-  .movie-score {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 3px;
-    font-size: 14px;
-    z-index: 20;
-  }
+  
 
   a {
     text-decoration: none;
