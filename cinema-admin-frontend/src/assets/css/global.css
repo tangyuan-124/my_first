@@ -1,0 +1,59 @@
+/*全局样式*/
+
+html, body, #app{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+.el-breadcrumb{
+    margin: 15px 0 10px 15px;
+    /*margin-bottom: 15px;*/
+    font-size: 10px;
+}
+
+.el-card{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15) !important;
+    border-top: gray solid 0;
+    border-radius: 0px !important;
+}
+
+.board{
+    margin-top: 0px;
+    border-bottom: gray solid 0;
+    background-color: white;
+    padding: 5px 5px;
+}
+
+.el-table{
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.el-pagination {
+    margin-top: 15px;
+}
+.custom-btn {
+  border-color: transparent !important;  /* 去除边框 */
+  background-color: #f3b7ad !important;   /* 自定义背景色 */
+  color: white !important;  /* 设置文字颜色 */
+}
+
+/* 可选：设置按钮的悬停状态样式 */
+.custom-btn:hover {
+  border-color: transparent !important;  /* 悬停时边框不改变 */
+  background-color: #f3b7ad !important;  /* 保持背景色 */
+}
+.custom-black-button {
+  font-size: 22px;
+  background-color: #f3b7ad !important;   /* 设置背景色为黑色 */
+  color: white !important;              /* 设置文字颜色为白色 */
+  border-color: #f3b7ad !important;       /* 设置边框颜色为黑色 */
+  border-radius: 5px;        /* 设置按钮的圆角 */
+  padding: 10px 20px;        /* 设置按钮的内边距 */
+}
+
+.custom-black-button:hover {
+  background-color: #f1b2b2;    /* 悬停时的背景颜色 (深灰色) */
+  border-color: #f1b2b2;        /* 悬停时的边框颜色 */
+}
