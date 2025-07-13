@@ -6,12 +6,11 @@
 
     <resultMap id="SysMovieResult" type="SysMovie">
         <id property="movieId" column="movie_id"></id>
-        <result property="movieScores" column="scores"></result>
         <collection property="movieCategoryList" column="movie_id" select="com.qfxl.cm.mapper.SysMovieCategoryMapper.findOneMovieCategorys"></collection>
     </resultMap>
 
     <select id="findAllMovies" resultMap="SysMovieResult" parameterType="SysMovieVo">
-        select sm.*, sm.scores as scores from sys_movie sm
+    
         <if test="movieCategoryId != null and movieCategoryId > 0">
             join sys_movie_to_category smtc on sm.movie_id = smtc.movie_id
             join sys_movie_category smtc on smtc.movie_id = smtc.movie_category_id

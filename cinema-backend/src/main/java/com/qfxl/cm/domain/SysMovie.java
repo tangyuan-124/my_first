@@ -38,8 +38,6 @@ public class SysMovie implements Serializable {
     //上映日期
     private Date releaseDate;
 
-    //电影评分
-    private BigDecimal movieScores;
 
     //电影总票房
     private Double movieBoxOffice;
@@ -58,12 +56,12 @@ public class SysMovie implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         SysMovie sysMovie = (SysMovie) o;
-        return Objects.equals(movieId, sysMovie.movieId) && Objects.equals(movieName, sysMovie.movieName) && Objects.equals(movieLength, sysMovie.movieLength) && Objects.equals(moviePoster, sysMovie.moviePoster) && Objects.equals(movieArea, sysMovie.movieArea) && Objects.equals(releaseDate, sysMovie.releaseDate) && Objects.equals(movieScores, sysMovie.movieScores) && Objects.equals(movieBoxOffice, sysMovie.movieBoxOffice) && Objects.equals(movieIntroduction, sysMovie.movieIntroduction) && Objects.equals(moviePictures, sysMovie.moviePictures) && Objects.equals(movieCategoryList, sysMovie.movieCategoryList);
+        return Objects.equals(movieId, sysMovie.movieId) && Objects.equals(movieName, sysMovie.movieName) && Objects.equals(movieLength, sysMovie.movieLength) && Objects.equals(moviePoster, sysMovie.moviePoster) && Objects.equals(movieArea, sysMovie.movieArea) && Objects.equals(releaseDate, sysMovie.releaseDate)  && Objects.equals(movieBoxOffice, sysMovie.movieBoxOffice) && Objects.equals(movieIntroduction, sysMovie.movieIntroduction) && Objects.equals(moviePictures, sysMovie.moviePictures) && Objects.equals(movieCategoryList, sysMovie.movieCategoryList);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(movieId, movieName, movieLength, moviePoster, movieArea, releaseDate, movieScores, movieBoxOffice, movieIntroduction, moviePictures, movieCategoryList);
+        return Objects.hash(movieId, movieName, movieLength, moviePoster, movieArea, releaseDate,  movieBoxOffice, movieIntroduction, moviePictures, movieCategoryList);
     }
 
 }
